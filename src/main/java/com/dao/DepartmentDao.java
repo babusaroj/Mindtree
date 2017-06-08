@@ -15,6 +15,6 @@ public interface DepartmentDao {
      
     List<Department> findAllDepartment();
     
-    public void deleteDepartment(Department department);
+    public String deleteDepartment(Department department);
 
 }

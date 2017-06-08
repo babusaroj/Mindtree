@@ -13,7 +13,7 @@ public interface EmployeeDao {
     
     void updateEmployee(Employe employee);
      
-    void deleteEmployee(Employe employee);
+    String deleteEmployee(Employe employee);
      
     List<Employe> findAllEmployees();
  

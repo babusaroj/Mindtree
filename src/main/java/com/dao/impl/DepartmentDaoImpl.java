@@ -37,8 +37,15 @@ public class DepartmentDaoImpl extends AbstractDao<Integer, Department> implemen
         return (List<Department>) criteria.list();
 	}
 	
-    public void deleteDepartment(Department department){
-    	delete(department);
+    public String deleteDepartment(Department department){
+    	try{
+    	  
+    	 delete(department);
+    	 return "record deleted sucessfull";
+    	}catch(Exception ex){
+    		return"record not deleted";
+    	}
+    	
     }
 
 }

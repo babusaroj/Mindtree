@@ -31,8 +31,15 @@ public class EmployeeDaoImpl extends AbstractDao<Integer, Employe> implements Em
 	
 
 	@Override
-	public void deleteEmployee(Employe employee) {
+	public String deleteEmployee(Employe employee) {
+		try{
 		delete(employee);
+		 return "record deleted sucessfull";
+		}catch(Exception ex){
+			
+		  return"record not deleted";
+		 
+		}
 	}
 
 	@Override

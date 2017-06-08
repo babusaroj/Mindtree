@@ -13,7 +13,7 @@ public interface EmployeeService {
 	 
 	 public  void updateEmploye(Employe emp);
 	 
-	 public void deleteEmploye(Employe emp);
+	 public String deleteEmploye(Employe emp);
 	 
 	 public List<Employe> findAllEmploye();
 }

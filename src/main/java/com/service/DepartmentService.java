@@ -11,5 +11,5 @@ public interface DepartmentService {
 	public  void saveDepartment(Department dept);
 	public  void updateDepartment(Department dept);
 	public List<Department> findAllDepartment();
-	public  void deleteDepartment(Department dept);
+	public  String deleteDepartment(Department dept);
 }

@@ -38,7 +38,7 @@ public class DepartmentServiceImpl implements DepartmentService{
 		 dao.saveDepartment(dept);
 	}
 	@Override
-	public void deleteDepartment(Department dept) {
-		 dao.deleteDepartment(dept);
+	public String deleteDepartment(Department dept) {
+		 return dao.deleteDepartment(dept);
 	}
 }

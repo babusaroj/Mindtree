@@ -34,7 +34,7 @@ public class EmployeeServiceImpl implements EmployeeService{
 		return dao.findAllEmployees();
 	}
 	
-	public void deleteEmploye(Employe emp){
-		dao.deleteEmployee(emp);
+	public String deleteEmploye(Employe emp){
+		return dao.deleteEmployee(emp);
 	}
 }
